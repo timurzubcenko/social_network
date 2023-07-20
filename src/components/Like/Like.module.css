@@ -1,0 +1,22 @@
+.like {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.like i {
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.like i .heartFill {
+  color: rgb(230, 91, 91);
+}
+.like i:hover {
+  transform: scale(1.1);
+}
+.like p {
+  font-weight: 300;
+  font-size: 18px;
+}/*# sourceMappingURL=Like.module.css.map */

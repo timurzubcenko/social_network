@@ -1,0 +1,33 @@
+.header {
+  padding: 15px 20px;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: -1px 1px 20px rgba(128, 128, 128, 0.2);
+}
+.header .in_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .in_header h2 {
+  font-weight: 400;
+  color: #acb6c4;
+}
+.header .in_header button {
+  background: #3489e3;
+  border: 1px solid #3489e3;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+.header .in_header button:hover {
+  background: #296eb7;
+  border: 1px solid #296eb7;
+}/*# sourceMappingURL=Header.module.css.map */

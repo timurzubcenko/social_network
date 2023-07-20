@@ -1,0 +1,108 @@
+.side_bar {
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .userProfile {
+        background: white;
+        box-shadow: -1px 1px 20px hsla(0, 0%, 50%, 0.4);
+        border-radius: 15px;
+        padding: 30px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .user {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            object-fit: cover;
+            object-position: center;
+
+            .image {
+                width: 40px;
+                height: 40px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            h3 {
+                font-weight: 600;
+                color: #b8c2d0;
+            }
+        }
+
+        .btn {
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s;
+
+            .icon {
+                color: #859fbf;
+            }
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+
+            .icon {
+                color: #5094dc;
+            }
+        }
+    }
+
+    .btns {
+        background: white;
+        box-shadow: -1px 1px 20px rgba(128, 128, 128, 0.4);
+        padding: 15px 0;
+        border-radius: 15px;
+        list-style: none;
+
+        .btn {
+            padding: 0 40px;
+            cursor: pointer;
+            // transition: all 0.1s;
+
+            .link {
+                text-decoration: none;
+                color: #acb6c4;
+                font-weight: 600;
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+                gap: 7px;
+                border-bottom: 2px solid #f4f5f8;
+                padding: 20px 0;
+
+                .icon {
+                    font-size: 23px;
+                    display: flex;
+                    align-items: center;
+                    color: #acb6c4;
+                }
+            }
+        }
+
+        .btn:hover {
+            background: #f8f9fb;
+        }
+
+        .btn.active {
+            background: #f4f5f8;
+            border-left: 4px solid #3489e3;
+        }
+
+        .btn:last-child {
+            .link {
+                border-bottom: 0;
+            }
+        }
+    }
+}

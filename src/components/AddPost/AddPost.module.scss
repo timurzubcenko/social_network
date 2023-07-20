@@ -1,0 +1,97 @@
+.main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 11;
+    background: #00000090;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .window {
+        background: #f3f3f5;
+        border: 1px solid #b5b5b5;
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        .discription {
+            outline: none;
+            background: transparent;
+            border: 1px solid #50535d;
+            width: 400px;
+            height: 100px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            color: #565656;
+            font-family: sans-serif;
+        }
+
+        .block_file {
+            position: relative;
+
+            .file {
+                background: #d1d1d1;
+                height: 300px;
+                width: 300px;
+                opacity: 0;
+                position: relative;
+                z-index: 1;
+            }
+
+            .costume_file {
+                background: #d7d7e3;
+                border-radius: 5px;
+                height: 300px;
+                width: 300px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 50px;
+                color: #6c6c6d;
+
+                .btn {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        filter: brightness(0.6);
+                    }
+                }
+            }
+        }
+
+        .btnAdd {
+            padding: 10px 14px;
+            font-size: 18px;
+            border: none;
+            background: #3489e3;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btnAdd:hover {
+            background: #176cdc;
+        }
+    }
+}

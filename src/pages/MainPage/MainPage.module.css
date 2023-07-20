@@ -1,0 +1,6 @@
+.main {
+  display: grid;
+  grid-template-columns: 330px 1fr;
+  gap: 10px;
+  margin-top: calc(1.6rem + 45px);
+}/*# sourceMappingURL=MainPage.module.css.map */

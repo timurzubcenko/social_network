@@ -1,0 +1,33 @@
+.menu {
+    background: #84848440;
+    backdrop-filter: blur(50px);
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 50px 20px;
+    border-radius: 10px;
+    transition: all 0.3s;
+
+    ul {
+        list-style: none;
+
+        li {
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        li:hover {
+            background: #00000010;
+        }
+
+        .remove_btn {
+            color: #d64646;
+        }
+
+        .close_btn {
+            color: #414141;
+        }
+    }
+}
